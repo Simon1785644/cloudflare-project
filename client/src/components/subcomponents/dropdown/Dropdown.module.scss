@@ -1,0 +1,64 @@
+%container {
+    position: relative;
+    display: inline-block; // 依按鈕大小自動調整寬高
+ }
+
+%header {
+    display:flex;
+    align-items:center;
+}
+
+%dropDownLabel {
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem; /* 20px */
+    color: #A4A4A4;
+    .labelRequired {
+        font-size: 20px;
+        color: #FF0000;
+        margin-left: 0.5rem; /* 8px */
+        top: 0px;
+    }
+}
+
+%dropDownBTN {
+    position: relative;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    border-radius: 2px;
+    cursor: pointer;
+    %dropDownIcon {
+        position:relative; // 避免位置跑掉
+    }
+    &:focus {
+        border: 2px orange solid;
+    }
+    &:hover {
+        background-color: lightsteelblue;
+    }
+}
+
+%dropDownUl {
+    position: absolute;
+    display: block;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    %dropDownLi {
+        position: relative;
+        min-width:100px;
+        align-items: center;
+        padding-left: 5px;
+        font-size: 20px;
+        color:dimgray;
+        background-color: rgb(210, 210, 210);
+    }
+}
+
+.icon_Flag {
+    width: 30px;
+    height: 20px;
+    border: black 1px solid;
+    margin-right: 10px;
+}

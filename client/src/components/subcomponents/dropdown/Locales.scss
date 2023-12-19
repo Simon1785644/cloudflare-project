@@ -1,0 +1,48 @@
+@use 'Dropdown.module';
+
+.localesContainer {
+    @extend %container;
+}
+
+.localesBTN {
+    width: 120px;
+    height: 40px;
+    position: relative;
+    display: flex;
+    color:white;
+    background-color: var(--primary-color);
+    border: 2px var(--primary-color) solid;
+    border-radius: 2px;
+    padding-left: 0.50rem; // Avoid text go out button
+    cursor: pointer;
+    .localesIcon {
+        position: absolute; // 避免位置跑掉
+        right: 14px;
+        color: forestgreen;
+    }
+    &:focus {
+        border: 2px orange solid;
+    }
+    &:hover {
+        color: darkolivegreen;
+        background-color: lightgreen;
+    }
+}
+
+.localesUl {
+    @extend %dropDownUl;
+    .localesLi {
+        width: 100%;
+        position: relative;
+        align-items: center;
+        padding-left: 5px;
+        font-size: 21px;
+        background-color: rgb(230, 230, 230);
+        &:hover {
+            color:darkorange;
+            font-weight: bold;
+            background-color: rgb(180, 180, 180);
+            cursor: pointer;
+        }
+    }
+}

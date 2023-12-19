@@ -1,0 +1,43 @@
+.CartContainer {
+    .CartError {
+        width:1080px;
+        padding: 0px 5px;
+        margin: 0px auto 0px auto;
+        border: 1px lightgrey solid;
+        border-radius: 5px;
+        background-color: lightyellow;
+    }
+    .CartWrapper {
+        width:1080px;
+        margin: 0px auto 0px auto;
+        display: flex;
+        flex-direction: column;
+        .CartHeader {
+            text-align: center;
+        }
+        .CartItemList {
+            width: 800px;
+            .CartAccount {
+                display: flex;
+                justify-content: space-between;
+                .CheckOutBTN {
+                    width:140px;
+                    border: 1px darkgoldenrod solid;
+                    border-radius: 5px;
+                    color:white;
+                    background-color: goldenrod;
+                    cursor:pointer;
+                    &:hover {
+                        color:goldenrod;
+                        background-color: lightyellow;
+                    }
+                    &:disabled {
+                        cursor:not-allowed;
+                        color:dimgrey;
+                        background-color: lightgrey;
+                    }
+                }
+            }
+        }
+    }
+}

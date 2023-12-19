@@ -1,0 +1,24 @@
+.category{
+    display: flex;
+    gap: 5px;
+    background-color: rgb(250, 250, 250);
+    .item {  
+        padding-left: 5px;
+        img {
+            border-radius: 2px;
+            object-fit: cover;
+            width: 245px;
+            height: 150px;
+        }
+        .itemInfo {
+            display: flex;
+            width: 245px;
+            height:200px;
+            background-color: lightgrey;
+            .title {
+                text-align: center;
+                font-weight: 800;
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.relatedItemContainer {
+    display:flex;
+    .relatedItemWrapper {
+        .relatedItemPhoto {
+            max-height: 200px;
+            width: 200px;
+        }
+        .relatedItemInfo {
+            font-size: 20px;
+        }
+    }
+}

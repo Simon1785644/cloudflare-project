@@ -1,0 +1,34 @@
+@use 'Dropdown.module';
+
+.dropdownContainer {
+    @extend %container;
+ }
+
+.dropdownHeader {
+    @extend %header;
+}
+
+.dropDownLabel {
+    @extend %dropDownLabel;
+}
+
+.dropDownBTN {
+    @extend %dropDownBTN;
+    .dropDownIcon {
+        @extend %dropDownIcon;
+        color: dimgray;
+    }
+}
+
+.dropDownUl {
+    @extend %dropDownUl;
+    .dropDownLi {
+        @extend %dropDownLi;
+        &:hover {
+            color:darkorange;
+            font-weight: bold;
+            background-color: rgb(180, 180, 180);
+            cursor: pointer;
+        }
+    }
+}

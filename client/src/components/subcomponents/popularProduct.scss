@@ -1,0 +1,49 @@
+.popularProducts {
+    display: flex;
+    gap: 10px;
+    background-color:rgb(241, 241, 241);
+    overflow:hidden;
+    .item {
+        width: 250px;
+        height: auto;
+        img {
+            display: flex;
+            width: 250px;
+            height: 300px;
+            padding: 2px;
+        }
+        .itemInfo {
+            font-size: 20px;
+            .price {
+                color: black;
+                font-weight: 500;
+                padding: 2px 0px;
+            }
+            .ratings {
+                align-items: center;
+                display: flex;
+                gap: 5px;
+                span {
+                    color: black;
+                }
+                p {
+                    font-size: 16px;
+                    color: dimgrey;
+                }
+                button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    font-size: 16px;
+                    font-weight: 700;
+                    height: 30px;
+                    width: 30px;
+                    border: none;
+                    background-color: var(--primary-color);
+                    border-radius: 5px 5px 5px 0px; //讓他左下角沒有圓角
+                }
+            }
+        }
+    }
+}

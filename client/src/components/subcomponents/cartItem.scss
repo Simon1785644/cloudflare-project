@@ -1,0 +1,39 @@
+.CartItemContainer {
+    display: flex;
+    border-radius: 5px;
+    background-color: white;
+    .itemImg {
+        height: 200px;
+        width: 150px;
+        padding: 5px;
+    }
+    .itemInfo {
+        display: flex;
+        flex-direction: column;
+        .infoDetail {
+            display: block;
+            .infoPrice {
+                justify-content: left;
+            }
+            .CartOptions {
+                display: flex;
+                gap:5px;
+                .QTYInput {
+                    width: 100px;
+                }
+                .CartOptionBTN {
+                    width:100px;
+                    border:none;
+                    border-radius: 5px;
+                    color:white;
+                    background-color: coral;
+                    cursor:pointer;
+                    &:hover {
+                        color:brown;
+                        background-color: lightcoral;
+                    }
+                }
+            }
+        }
+    }
+}

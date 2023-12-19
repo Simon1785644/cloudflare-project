@@ -1,0 +1,9 @@
+.home {
+    /* flex橫向排列，搭配justify-content置中
+       必須宣告寬度才有作用
+    */
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+}

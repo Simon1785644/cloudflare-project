@@ -1,0 +1,59 @@
+.loginHeader{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .loginWrapper {
+        width:500px;
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px grey solid;
+        border-radius: 2px;
+        background-color: whitesmoke;
+    }
+}
+
+.registerHeader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .registerWrapper {
+        width:500px;
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px grey solid;
+        border-radius: 2px;
+        background-color: whitesmoke;
+    }
+}
+
+.title {
+    height:60px;
+    margin:0;
+    padding:0;
+    align-items: start;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    gap: 15px;
+}
+.submit {
+    border: none;
+    border-radius: 2px;
+    color:lightgoldenrodyellow;
+    background-color: orange;
+    cursor: pointer;
+    &:hover {
+        color:white;
+        background-color: darkorange;
+    }
+}
+.Link {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+        color: lightskyblue;
+    }
+}

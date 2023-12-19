@@ -1,0 +1,42 @@
+.headerContainer {
+    width: 1024px;
+    display: flex;
+    background-color: coral;
+    margin: 0 auto 0 auto;
+    .slider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .sliderWrapper {
+            border-radius: 2px;
+            .wrapperBody {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: black;
+                .arrow {
+                    margin: 0 20px;
+                    font-size: 40px;
+                    color: black;
+                    cursor: pointer;
+                    &:hover {
+                        color: white;
+                    }
+                }
+                .headerImg {
+                    width:200px;
+                    height:auto;
+                    padding: 5px;
+                    user-select: none; // 禁止點選拖曳
+                }
+                .EventBTN {
+                    text-decoration: none;
+                    color:black;
+                    &:hover {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

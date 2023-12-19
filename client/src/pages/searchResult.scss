@@ -1,0 +1,18 @@
+.searchResultContainer {
+    width: 100%;
+    max-width: 1024px;
+    display: block;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+    .filterWrapper {
+        gap: 20px;
+        display: flex;
+        .filterList {
+            height: max-content;
+            .filterRatingUl {
+                list-style: none;
+                text-decoration: none;
+            }
+        }
+    }
+}
